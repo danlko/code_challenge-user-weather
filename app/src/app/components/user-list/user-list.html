@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="header">
+    <img src="https://cdn-icons-png.flaticon.com/512/3104/3104619.png" alt="Logo" class="logo">
+  <h2 class="welcome">User Weather Dashboard</h2>
+  </div>
+  <div class="grid">
+    @for (userItem of users; track userItem.email){
+      <app-user-card [user]="userItem"></app-user-card>
+    }
+    
+  </div>
+</div>

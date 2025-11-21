@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="image-wrapper">
+    <img [src]="user.picture.large" alt="Avatar" class="user-img">
+  </div>
+
+  <div class="right-section">
+    <h3 class="name">{{user.name.first}} {{user.name.last}}</h3>
+      <p class="info-row"><span class="label">Gender: {{user.gender}}</span></p>
+      <p class="info-row"><span class="label">Location: {{user.location.city}}, {{user.location.country}}</span></p>
+      <p class="info-row"><span class="label">Email: {{user.email}}</span></p>
+
+    <div class="weather-widget">
+      <img [src]="weatherIcon" alt="Weather Icon" class="weather-icon">
+      <div class="weather-info">
+        <p class="current-temp">{{weather?.current_weather?.temperature}}°C</p>
+        <div class="min-max">
+          <span>Min: {{minTemp}}° </span> | <span>Max: {{maxTemp}}°</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
